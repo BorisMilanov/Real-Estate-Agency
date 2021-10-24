@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const initDatabase = require('./config/mongoConfig')
-const routes = require('./routes')
+const initDatabase = require('./config/mongoConfig');
+const routes = require('./routes');
 const port = 5000;
 
 const hbsConfig = require('./config/handlebarsConfig');
@@ -12,4 +12,4 @@ serveFiles(app);
 app.use(routes);
 
 
-initDatabase().then(app.listen(port)).catch((err)=>console.log(err))
+initDatabase().then(app.listen(port)).catch((err)=>console.log(err));

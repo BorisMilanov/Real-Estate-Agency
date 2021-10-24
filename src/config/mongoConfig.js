@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 async function initDatabase() {
-    await mongoose.connect('mongodb://localhost:27017/test');
+    await mongoose.connect('mongodb://localhost:27017/real');
 }
 
 module.exports = initDatabase;
